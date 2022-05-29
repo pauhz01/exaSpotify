@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="577.0" prefWidth="550.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.exaspotify.registroController">
+   <children>
+      <ImageView fitHeight="465.0" fitWidth="549.0" layoutX="1.0" layoutY="91.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../../../../image/fondoinicio.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="94.0" fitWidth="118.0" layoutX="42.0" layoutY="-10.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../image/logo.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="172.0" layoutY="18.0" prefHeight="51.0" prefWidth="338.0" style="-fx-alignment: center;" text="BIENVENIDO A SPOTIFY" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="55.0" layoutY="139.0" prefHeight="43.0" prefWidth="147.0" text="USUARIO" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="42.0" layoutY="204.0" prefHeight="43.0" prefWidth="147.0" text="CONTRASEÑA" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="registro" layoutX="310.0" layoutY="471.0" mnemonicParsing="false" onAction="#registro" prefHeight="43.0" prefWidth="200.0" style="-fx-background-color: green;" text="REGISTRARSE" />
+      <PasswordField fx:id="pwd" layoutX="258.0" layoutY="204.0" prefHeight="43.0" prefWidth="200.0" style="-fx-background-color: white;" />
+      <TextField fx:id="usu" layoutX="258.0" layoutY="139.0" prefHeight="43.0" prefWidth="200.0" style="-fx-background-color: white;" />
+      <TextField fx:id="mail" layoutX="258.0" layoutY="267.0" prefHeight="43.0" prefWidth="200.0" style="-fx-background-color: white;" />
+      <Label alignment="CENTER" layoutX="24.0" layoutY="324.0" prefHeight="43.0" prefWidth="183.0" text="FECHA NACIMENTO" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="42.0" layoutY="267.0" prefHeight="43.0" prefWidth="147.0" text="CORREO" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+
+
+      <DatePicker fx:id="fecha" layoutX="258.0" layoutY="333.0" prefHeight="26.0" prefWidth="200.0" />
+      <Label alignment="CENTER" layoutX="37.0" layoutY="450.0" prefHeight="43.0" prefWidth="183.0" text="¿Ya tienes cuenta?" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="desesion" layoutX="36.0" layoutY="502.0" mnemonicParsing="false" onAction="#iniciarSesion" prefHeight="43.0" prefWidth="200.0" style="-fx-background-color: green;" text="Inicia Sesion" />
+   </children>
+</AnchorPane>
